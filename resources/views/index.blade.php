@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <table>
+    <table id="datatable" class="display" style="width:100%">
         <thead>
             <tr>
                 <th>ID</th>

@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 font-sans antialiased">
 
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex items-center justify-between">
-            <div class="text-white text-lg font-semibold">IMC</div>
+    <nav class="bg-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+            <div class="text-lg font-semibold">IMC</div>
             <div>
-                <a href="/" class="text-white px-4 hover:text-gray-300">Accueil</a>
-                <a href="/simulateur" class="text-white px-4 hover:text-gray-300">Simulateur</a>
+                <a href="/" class="px-4 hover:text-gray-300">Accueil</a>
+                <a href="/imc" class="px-4 hover:text-gray-300">Simulateur</a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container mx-auto px-4 py-8">
         @yield('content')
     </div>
     <!-- Scripts -->

@@ -3,8 +3,8 @@
 @section('content')
     <div class="container mx-auto p-8">
         <h1 class="text-3xl font-semibold mb-4">Calculateur d'IMC</h1>
-        <form action="/simulateur" method="POST">
-            @csrf
+        <form action="{{ route('imc.store') }}" method="POST">
+        @csrf
             <div class="mb-4">
                 <label for="user" class="block text-gray-700 font-semibold mb-2">Nom d'utilisateur</label>
                 <input type="text" name="user" id="user" class="border border-gray-400 p-2 w-full" required>

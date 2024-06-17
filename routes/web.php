@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IMCRecordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', [IMCRecordController::class, 'index']);
+Route::get('/imc', [IMCRecordController::class, 'imc']);
+
+Route::get('/test', function () {
     return view('welcome');
 });

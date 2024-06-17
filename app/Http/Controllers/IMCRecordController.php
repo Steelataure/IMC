@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Models\IMCRecord;
 use App\Http\Controllers\Controller; 
+use Illuminate\Http\Request;
 
 
 class IMCRecordController extends Controller

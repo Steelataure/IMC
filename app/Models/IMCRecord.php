@@ -9,6 +9,8 @@ class IMCRecord extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     // Définir la table associée au modèle
     protected $table = 'IMC_Records';
 

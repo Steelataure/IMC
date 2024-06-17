@@ -6,8 +6,15 @@
     <title>{{ config('app.name', 'IMC') }}</title>
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" />
     <link href="https://cdn.datatables.net/2.0.8/js/dataTables.js" rel="stylesheet">
-    <link href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
 
 </head>
 <body class="bg-gray-100 font-sans antialiased">
@@ -26,6 +33,7 @@
         @yield('content')
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+
+
 </body>
 </html>

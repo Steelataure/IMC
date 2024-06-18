@@ -52,9 +52,11 @@ class IMCRecordController extends Controller
 
         // Enregistrer l'enregistrement dans la base de données
         $imcRecord->save();
+        $message = "Votre IMC a été calculé avec succès ! Nom: {$imcRecord->user}, IMC: {$imcRecord->IMC_value}, Catégorie: {$imcRecord->categorie}";
 
         // Rediriger l'utilisateur vers la page d'accueil avec un message de succès
-        return redirect('/')->with('success', 'Votre IMC a été calculé avec succès !');
+        return redirect('/')->with('success', "Votre IMC a été calculé avec succès !
+         Nom: {$imcRecord->user}, IMC: {$imcRecord->IMC_value}, Catégorie: {$imcRecord->categorie}");
     }
 
     private function determineIMCCategorie($imcValue)

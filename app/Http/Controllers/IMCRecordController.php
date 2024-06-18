@@ -18,13 +18,13 @@ class IMCRecordController extends Controller
         return view('index', ['imcRecords' => $imcRecords]);
     }
 
-    public function imc()
+    public function create()
     {
         // Récupérer tous les enregistrements IMC de la table IMC_Records
         $imcRecords = IMCRecord::all();
 
         // Passer les données à la vue pour les afficher
-        return view('imc', ['imcRecords' => $imcRecords]);
+        return view('create', ['imcRecords' => $imcRecords]);
     }
 
     public function store(Request $request)

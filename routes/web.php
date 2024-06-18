@@ -15,8 +15,8 @@ use App\Http\Controllers\IMCRecordController;
 */
 
 Route::get('/', [IMCRecordController::class, 'index']);
-Route::get('/imc', [IMCRecordController::class, 'imc']);
-Route::post('/imc', [IMCRecordController::class, 'store'])->name('imc.store');
+Route::get('/create', [IMCRecordController::class, 'create']);
+Route::post('/create', [IMCRecordController::class, 'store'])->name('create.store');
 
 
 Route::get('/test', function () {

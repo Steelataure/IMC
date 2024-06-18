@@ -23,10 +23,10 @@
 
     <nav class="bg-gray-800 text-white shadow-md">
         <div class="container mx-auto px-4 py-2 flex items-center justify-between">
-            <div class="text-lg font-semibold">IMC</div>
+            <a href="/" class="text-lg font-semibold">IMC</a>
             <div>
                 <a href="/" class="px-4 hover:text-gray-300">Accueil</a>
-                <a href="/imc" class="px-4 hover:text-gray-300">Simulateur</a>
+                <a href="/create" class="px-4 hover:text-gray-300">Simulateur</a>
             </div>
         </div>
     </nav>

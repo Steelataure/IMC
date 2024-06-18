@@ -5,10 +5,12 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>User</th>
-                <th>Weight (kg)</th>
-                <th>Height (cm)</th>
-                <th>IMC Value</th>
+                <th>Nom</th>
+                <th>Poids (kg)</th>
+                <th>Taille (cm)</th>
+                <th>IMC Valeur</th>
+                <th>Catégorie</th>
+
             </tr>
         </thead>
         <tbody>
@@ -19,6 +21,8 @@
                     <td>{{ $imcRecord->weight_kg }}</td>
                     <td>{{ $imcRecord->height_cm }}</td>
                     <td>{{ $imcRecord->IMC_value }}</td>
+                    <td>{{ $imcRecord->categorie }}</td>
+
                 </tr>
             @endforeach
         </tbody>

@@ -19,6 +19,7 @@ class IMCRecord extends Model
         'user',
         'weight_kg',
         'height_cm',
-        'IMC_value'
+        'IMC_value',
+        'categorie'
     ];
 }
